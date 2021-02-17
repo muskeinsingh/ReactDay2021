@@ -8,14 +8,17 @@ import {
   SafeAreaView,
   Pressable,
 } from 'react-native';
+import UUIDGenerator from 'react-native-uuid-generator';
 import quotes from './Quotes';
 const App = () => {
   const [inspringQuoteIndex, setInspirationQuoteIndex] = useState(0);
+  const [uuid, setUUID] = useState(null);
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <Character characterInfo={quotes[inspringQuoteIndex]} />
+        <Text style={styles.darkText}>{uuid}</Text>
         <View style={{margin: 40, borderRadius: 20}}>
           <Pressable
             android_ripple={{radius: 200}}
@@ -26,7 +29,17 @@ const App = () => {
               );
               setInspirationQuoteIndex(randomQuoteIndex);
             }}>
-            <Text style={styles.lightText}>Inspire Me!</Text>
+            <Text style={styles.lightText}>Inspire all of us @Recro!</Text>
+          </Pressable>
+          <Pressable
+            android_ripple={{radius: 200}}
+            style={styles.button}
+            onPress={() => {
+              UUIDGenerator.getRandomUUID().then((randomUUID) => {
+                setUUID(randomUUID);
+              });
+            }}>
+            <Text style={styles.lightText}>Generate UUID</Text>
           </Pressable>
         </View>
       </SafeAreaView>
