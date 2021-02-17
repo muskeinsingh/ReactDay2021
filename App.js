@@ -33,7 +33,7 @@ const App = () => {
                 margin: 12,
                 color: 'white',
               }}>
-              Inspire Me!
+              Inspire all of us @Recro!
             </Text>
           </Pressable>
         </View>
