@@ -26,7 +26,9 @@ const App = () => {
               );
               setInspirationQuoteIndex(randomQuoteIndex);
             }}>
-            <Text style={styles.lightText}>Inspire Me!</Text>
+            <Text style={styles.lightText}>
+              Inspire all of us @Recro for Web!
+            </Text>
           </Pressable>
         </View>
       </SafeAreaView>
