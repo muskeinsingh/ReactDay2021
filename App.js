@@ -26,9 +26,7 @@ const App = () => {
               );
               setInspirationQuoteIndex(randomQuoteIndex);
             }}>
-            <Text style={styles.lightText}>
-              Inspire all of us @Recro for Web!
-            </Text>
+            <Text style={styles.lightText}>Inspire all of us @ReactDay!</Text>
           </Pressable>
         </View>
       </SafeAreaView>
@@ -50,7 +48,7 @@ const Character = ({characterInfo}) => {
 
 const styles = StyleSheet.create({
   darkText: {
-    margin: 40,
+    margin: 20,
     fontWeight: '700',
     fontSize: 16,
     textAlign: 'center',
