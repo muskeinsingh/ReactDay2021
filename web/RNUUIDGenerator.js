@@ -9,8 +9,5 @@ class RNUUIDGenerator {
   getRandomUUID(callback) {
     callback(uuidv4());
   }
-  getName() {
-    return 'RNUUIDGenerator';
-  }
 }
 export default new RNUUIDGenerator();

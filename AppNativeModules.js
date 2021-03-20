@@ -7,8 +7,8 @@ import {
   Image,
   SafeAreaView,
   Pressable,
+  NativeModules,
 } from 'react-native';
-import UUIDGenerator from 'react-native-uuid-generator';
 import quotes from './Quotes';
 const App = () => {
   const [inspringQuoteIndex, setInspirationQuoteIndex] = useState(0);
@@ -44,7 +44,7 @@ const Buttons = ({setUUID, setInspirationQuoteIndex}) => {
         android_ripple={{radius: 200}}
         style={styles.button}
         onPress={() => {
-          UUIDGenerator.getRandomUUID().then((randomUUID) => {
+          NativeModules.RNUUIDGenerator.getRandomUUID(function (randomUUID) {
             setUUID(randomUUID);
           });
         }}>
