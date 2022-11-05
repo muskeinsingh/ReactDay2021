@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 const Quotes = [
   {
     text: 'I solemnly swear that I am up to no good',

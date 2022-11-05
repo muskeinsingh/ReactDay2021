@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, {useState} from 'react';
 import {
   StyleSheet,
@@ -38,7 +39,7 @@ const Buttons = ({setUUID, setInspirationQuoteIndex}) => {
           const randomQuoteIndex = Math.floor(Math.random() * quotes.length);
           setInspirationQuoteIndex(randomQuoteIndex);
         }}>
-        <Text style={styles.lightText}>Inspire all of us @ReactDay!</Text>
+        <Text style={styles.lightText}>Inspire all of us @Pesto!</Text>
       </Pressable>
       <Pressable
         android_ripple={{radius: 200}}

@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import React, {useState} from 'react';
 import {
   StyleSheet,
@@ -26,7 +27,7 @@ const App = () => {
               );
               setInspirationQuoteIndex(randomQuoteIndex);
             }}>
-            <Text style={styles.lightText}>Inspire all of us @ReactDay!</Text>
+            <Text style={styles.lightText}>Inspire all of us @Pesto!</Text>
           </Pressable>
         </View>
       </SafeAreaView>
